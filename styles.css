@@ -170,6 +170,18 @@ img{
   cursor: pointer;
 }
 
+/* Add this CSS to change color on hover */
+.project-link {
+  color: rgb(16, 15, 15); /* Initial color */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.project-link:hover {
+  color: #ff5733; /* Change to the color you want on hover */
+}
+
+
 /*Active menu*/
 .active::after{
   position: absolute;
@@ -236,11 +248,17 @@ img{
 
 /* ===== ABOUT =====*/
 .about__container{
-  row-gap: 2rem;
-  text-align:left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* row-gap: 2rem;
+  text-align:left; */
 }
 .about__subtitle{
-  margin-bottom: var(--mb-2);
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: firebrick;
 }
 /* .about__img{
    justify-self: center; 
